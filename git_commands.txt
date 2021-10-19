@@ -57,3 +57,5 @@ git stash drop <index>: this will delete the indexed stash from stash list.
 
 git stash clear: clear the whole stash list. 
 
+
+git reflog: you can get the hashcode that is needed for remaking the commit you need. After this, you can use git reset --hard <hashcode> will bring back lost commit. 
