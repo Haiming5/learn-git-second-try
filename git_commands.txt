@@ -1,0 +1,46 @@
+git checkout <commit_hash_code>: will take you to that commit, and leave you in a head detached mode. I can always go back to my newest state by checkout to the current branch. 
+
+
+git branch
+
+
+git branch <branch name(no space)>: create a new branch. 
+
+
+git checkout <branch name>: switch to a different branch. 
+
+git checkout -b <branch name>: create and switch to a different branch. 
+
+git merge <branch name>: you need to be in the branch where you want other branches to merge into. Works well when people are working on different features of the app. 
+
+
+git switch <branch name>: create a new branch, the reason we have switch instead of using checkout is because it might get confusing for beginner. Because checkout can be used for branch and commit. 
+
+git switch -c <branch name>: create a new branch and switch to that branch. 
+
+git ls-files: Check what files are in the staging status. 
+
+git rm <filename>: delete file from working directory. After deleting the file from working directory, the file will still be in staging section, to completely delete it, use git rm <filename> 
+
+git checkout <filename>: this will erase the unstaged changes. This will bring you back to the latest commit head for the current branch. 
+Another way to do it is git checkout . -> this will erase all unstaged changes in the branch.  
+
+git restore <filename> or . : works exactly the same way as the rule above. The reason we have this is to distinguish the function of each command, we don't want to use git checkout for any activity. 
+
+git clean -dn: say we create a new file and that file is not staged. We want to delet it completely form our working directory. We run this command to see what file will be deleted. 
+
+
+git restore --staged <filename> + git checkout <filename>: this combo will clear the file that is staged but not committed yet. 
+
+
+git reset --soft HEAD~1: this will reset the commit, the file is no longer committed, but the file will be still staged.
+
+git reset HEAD~1: this will reset the commit and stage status of the file. The file will still be in working directory, but the file is not staged nor committed. 
+
+git reset --hard HEAD~1: this will do everything git reset HEAD~1 does, and will also completely remove the file from the working directory. 
+
+
+git branch -d: this will delete a branch that is already merged. 
+
+
+git branch -D: this will delete a branch no matter if it's merged or not. 
