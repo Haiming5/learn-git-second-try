@@ -59,3 +59,16 @@ git stash clear: clear the whole stash list.
 
 
 git reflog: you can get the hashcode that is needed for remaking the commit you need. After this, you can use git reset --hard <hashcode> will bring back lost commit. 
+
+=========================================================
+Dive Deeper into Merge
+
+FAST FORWARD MERGE: 
+apply when master is not updated after feature branch is created. It means that, we simply move pointer from master branch to newest head pointer in feature branch. No additional commits are created. 
+
+
+git merge --squash <branch name>: you can create one commit conclude all newest changes in feature branch.  
+
+
+NON-FAST FORWARD MERGE: 
+
