@@ -85,3 +85,7 @@ git branch -a: get to see some branches (remote tracking branches, local branche
 
 
 git ls-remote: be able to see all remote branches. 
+
+git fetch origin: this will fetch remote repository from github and create a remote tracking branch on your computer. 
+
+git pull origin <branch name>: 
