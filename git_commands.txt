@@ -99,3 +99,7 @@ git branch -vv: this will check whether or not a branch is a pure local branch o
 git remote: show remote server. 
 
 
+git branch -r: show remote tracking branches. 
+
+
+git remote show origin: show detailed configuration. 
