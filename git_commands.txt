@@ -52,3 +52,8 @@ git stash: it will save unstaged changes to a temporary memory. and if you want 
 git stash push -m: you are able to add message to this stash. 
 
 git stash pop <index>: this will pop the chosen stash from stash list, and add it to our current branch. 
+
+git stash drop <index>: this will delete the indexed stash from stash list. 
+
+git stash clear: clear the whole stash list. 
+
