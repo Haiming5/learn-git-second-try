@@ -103,3 +103,8 @@ git branch -r: show remote tracking branches.
 
 
 git remote show origin: show detailed configuration. 
+
+
+git branch --delete --remotes <branch name>: this will delete remote tracking branch. 
+
+git push origin --delete <branch name>: this will delete remote branches. If remote branch is deleted, corresponding remote tracking branch will be deleted automatically. 
