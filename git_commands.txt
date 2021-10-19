@@ -81,7 +81,7 @@ when we say git push origin master, github will create a remote tracking branch 
 Remote tracking branch is a local copy of remote branch. 
 
 
-git branch -a: get to see some branches (remote tracking branches(local copy of remote branch, and should not be edited)), local branches)
+git branch -a: get to see some branches (remote tracking branches(local copy of remote branch, and should not be edited)), local branches, and local tracking branches)
 
 
 git ls-remote: be able to see all remote branches. 
@@ -92,3 +92,10 @@ git pull origin <branch name>:
 
 
 git branch --track <any local tracking file name> <remote repo>
+
+
+git branch -vv: this will check whether or not a branch is a pure local branch or local tracking branch. 
+
+git remote: show remote server. 
+
+
