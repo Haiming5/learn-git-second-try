@@ -76,3 +76,9 @@ NON-FAST FORWARD MERGE:
 =====================================================
 
 
+BRANCHES: 
+when we say git push origin master, github will create a remote tracking branch (remotes/origin/master). And at the same time a remote branch will be created (origin repository) -> master. Keep in mind that there is not relation between local branch and remote branch themselves. 
+Remote tracking branch is a local copy of remote branch. 
+
+
+git branch -a: get to see all branches (remote tracking branches, local branches, and remote branches, local tracking branches)
