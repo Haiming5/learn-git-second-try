@@ -44,3 +44,5 @@ git branch -d: this will delete a branch that is already merged.
 
 
 git branch -D: this will delete a branch no matter if it's merged or not. 
+
+In order to add one commit hashcode to master branch. We first need to access the commit hashcode. And made changes we want, and stage them and commit all of them. After that, we need to create a new branch with the given id. Then we can merge the new branch to the master branch. 
