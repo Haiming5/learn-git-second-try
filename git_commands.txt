@@ -89,3 +89,6 @@ git ls-remote: be able to see all remote branches.
 git fetch origin: this will fetch remote repository from github and create a remote tracking branch on your computer. 
 
 git pull origin <branch name>: 
+
+
+git branch --track <any local tracking file name> <remote repo>
